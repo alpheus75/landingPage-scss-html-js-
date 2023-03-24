@@ -296,185 +296,77 @@ section {
 /** about section **/
 .about {
   position: relative;
-  z-index: 2;
   min-height: 100vh;
   width: 100%;
   background-color: var(--bs-gray-400);
 }
 .about .about-container {
   padding: 3rem;
-  margin: 2rem 6rem;
+  margin: 2rem 4rem;
   box-sizing: border-box;
   background-color: var(--bs-gray-100);
   justify-content: center;
   align-items: center;
   min-height: 100%;
-  z-index: 2;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
   padding-top: 1.5rem;
   padding-bottom: 5rem;
   gap: 2rem;
   overflow-x: hidden;
-}
-.about .about-container .left-about {
   display: grid;
-  grid-template-rows: 1fr;
-  z-index: 2;
-  gap: 2rem;
+  grid-template-rows: repeat(3, 1fr);
 }
-.about .about-container .left-about .top-left-about {
+.about .about-container .about-history {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
-  height: 100%;
-  grid-row: 1/span 1;
 }
-.about .about-container .left-about .top-left-about .my-avi {
-  border-radius: 10px;
-  box-sizing: border-box;
-  margin-left: 4rem;
-  align-items: center;
-  justify-content: center;
-  background-color: grey;
-  z-index: 2;
-  width: 80%;
+.about .about-container .core-about {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
-.about .about-container .left-about .top-left-about .my-avi img {
-  min-width: 100%;
-  height: auto;
-  vertical-align: middle;
-  filter: grayscale(100%);
-}
-.about .about-container .left-about .top-left-about .my-avi img:hover {
-  filter: grayscale(0);
-}
-.about .about-container .left-about .top-left-about .my-details {
-  padding: 0.5rem;
-  box-sizing: border-box;
-  width: 100%;
-}
-.about .about-container .left-about .top-left-about .my-details p {
-  line-height: 2.5rem;
-  font-size: 1.2rem;
-}
-.about .about-container .left-about .top-left-about .my-details p .title-s {
-  text-transform: uppercase;
-  font-weight: 900;
-}
-.about .about-container .left-about .my-skills {
-  z-index: 2;
-  height: 70%;
-  grid-row: 2/span 1;
-  margin-left: 2rem;
-  margin-right: 2rem;
-}
-.about .about-container .left-about .my-skills .progress-bars {
+.about .about-container .core-about .left-core {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  gap: 1rem;
 }
-.about .about-container .left-about .my-skills .progress-bars .progress-bar {
-  display: flex;
-  flex-direction: column;
-}
-.about .about-container .left-about .my-skills .progress-bars .progress-bar .prog-title {
-  text-transform: uppercase;
-  font-weight: 500;
-}
-.about .about-container .left-about .my-skills .progress-bars .progress-bar .progress-con {
-  display: flex;
-  align-items: center;
-}
-.about .about-container .left-about .my-skills .progress-bars .progress-bar .progress-con .prog-text {
-  color: grey;
-}
-.about .about-container .left-about .my-skills .progress-bars .progress-bar .progress-con .progress {
+.about .about-container .core-about .right-core {
   width: 100%;
-  height: 0.45rem;
-  background-color: darkgrey;
-  position: relative;
 }
-.about .about-container .left-about .my-skills .progress-bars .progress-bar .progress-con .progress span {
-  position: absolute;
-  top: 0;
-  left: 0;
+.about .about-container .structure-about {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.about .about-container .structure-about .structure-text {
   height: 100%;
-  background-color: green;
-  width: 60%;
-}
-.about .about-container .left-about .my-skills .progress-bars .progress-bar .progress-con .progress .html {
-  width: 85%;
-}
-.about .about-container .left-about .my-skills .progress-bars .progress-bar .progress-con .progress .css {
-  width: 70%;
-}
-.about .about-container .left-about .my-skills .progress-bars .progress-bar .progress-con .progress .js {
-  width: 68%;
-}
-.about .about-container .left-about .my-skills .progress-bars .progress-bar .progress-con .progress .php {
-  width: 70%;
-}
-.about .about-container .left-about .my-skills .progress-bars .progress-bar .progress-con .progress .laravel {
-  width: 88%;
-}
-.about .about-container .left-about .my-skills .progress-bars .progress-bar .progress-con .progress .flutter {
-  width: 67%;
-}
-.about .about-container .right-about {
-  height: 100%;
-}
-.about .about-container .right-about h1 {
-  text-transform: uppercase;
-  font-size: 2rem;
-}
-.about .about-container .right-about .my-bio {
-  box-sizing: border-box;
-  padding: auto;
-}
-.about .about-container .right-about .my-bio .bio {
-  line-height: 2.5rem;
-  font-size: 1.5rem;
-}
-
-.port-text {
-  padding-top: 0;
-  padding-bottom: 0;
-  text-align: center;
-  font-size: 3rem;
-}
-
-.portfolio {
-  position: relative;
-  z-index: 2;
-  min-height: 100vh;
   width: 100%;
-  background-color: var(--bs-gray-400);
-  top: 0;
 }
-.portfolio .portfolios {
+.about .about-container .structure-about .management {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-  padding-top: 0rem;
-  padding-right: 11rem;
-  padding-bottom: 2rem;
-  padding-left: 11rem;
-}
-.portfolio .portfolios .portfolio-item {
-  position: relative;
-}
-.portfolio .portfolios .portfolio-item img {
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  height: 300px;
+  height: 100%;
+  padding-top: 0rem;
+  padding-right: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+}
+.about .about-container .structure-about .management .management-item {
+  position: relative;
+  z-index: 2;
+}
+.about .about-container .structure-about .management .management-item img {
+  width: 100%;
+  height: 200px;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 15px;
 }
-.portfolio .portfolios .portfolio-item .hover-items {
+.about .about-container .structure-about .management .management-item .hover-items {
   width: 100%;
   height: 100%;
-  background-color: rgb(13, 122, 13);
+  background-color: var(--bs-success);
   position: absolute;
   left: 0;
   top: 0;
@@ -487,21 +379,21 @@ section {
   transform: scale(0);
   transition: all 0.4s ease-in-out;
 }
-.portfolio .portfolios .portfolio-item .hover-items h3 {
+.about .about-container .structure-about .management .management-item .hover-items h3 {
   font-size: 1.5rem;
   color: var(--color-white);
   margin-bottom: 1.5rem;
 }
-.portfolio .portfolios .portfolio-item .hover-items .icons {
+.about .about-container .structure-about .management .management-item .hover-items .icons {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.portfolio .portfolios .portfolio-item .hover-items .icons .icon {
-  background-color: rgb(12, 12, 12);
+.about .about-container .structure-about .management .management-item .hover-items .icons .icon {
+  background-color: var(--bs-gray);
   border-radius: 50%;
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -509,18 +401,58 @@ section {
   cursor: pointer;
   transition: all 0.4s ease-in-out;
 }
-.portfolio .portfolios .portfolio-item .hover-items .icons .icon i {
-  font-size: 1.5rem;
+.about .about-container .structure-about .management .management-item .hover-items .icons .icon i {
+  font-size: 1rem;
   color: white;
   margin: 0 1rem;
 }
-.portfolio .portfolios .portfolio-item .hover-items .icons .icon:hover {
+.about .about-container .structure-about .management .management-item .hover-items .icons .icon:hover {
   background-color: white;
 }
-.portfolio .portfolios .portfolio-item .hover-items .icons .icon:hover i {
-  color: rgb(12, 12, 12);
+.about .about-container .structure-about .management .management-item .hover-items .icons .icon:hover i {
+  color: var(--bs-gray);
 }
-.portfolio .portfolio-item:hover .hover-items {
+.about .about-container .structure-about .management-item:hover .hover-items {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.service-text {
+  padding-top: 0;
+  padding-bottom: 0;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.services-container {
+  position: relative;
+  z-index: 2;
+  min-height: 100vh;
+  width: 100%;
+  background-color: var(--bs-gray-400);
+  top: 0;
+}
+.services-container .our-activities {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding-top: 0rem;
+  padding-right: 11rem;
+  padding-bottom: 2rem;
+  padding-left: 11rem;
+}
+.services-container .our-activities .activity {
+  position: relative;
+}
+.services-container .our-activities .activity .left-activity {
+  width: 100%;
+  height: 300px;
+}
+.services-container .our-activities .activity .right-activity {
+  width: 100%;
+  height: 100%;
+}
+.services-container .portfolio-item:hover .hover-items {
   opacity: 1;
   transform: scale(1);
 }
@@ -610,7 +542,7 @@ section {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.blog-section {
+.gallery {
   position: relative;
   z-index: 2;
   min-height: 100vh;
@@ -618,31 +550,31 @@ section {
   background-color: rgb(165, 159, 167);
   top: 0;
 }
-.blog-section .blogs {
+.gallery .gallery-images {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
   margin-top: 3rem;
   padding: 1rem 11rem;
 }
-.blog-section .blogs .blog {
+.gallery .gallery-images .gall-image {
   position: relative;
   background-color: grey;
   border-radius: 5px;
   box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.1);
   transition: all 0.4s ease-in-out;
 }
-.blog-section .blogs .blog:hover {
+.gallery .gallery-images .gall-image:hover {
   box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.3);
   transform: translateY(-5px);
   transition: all 0.4s ease-in-out;
 }
-.blog-section .blogs .blog:hover img {
+.gallery .gallery-images .gall-image:hover img {
   filter: grayscale(0);
   transform: scale(1.1);
   box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.8);
 }
-.blog-section .blogs .blog img {
+.gallery .gallery-images .gall-image img {
   width: 100%;
   height: 300px;
   -o-object-fit: cover;
@@ -652,24 +584,20 @@ section {
   filter: grayscale(100%);
   transition: all 0.4s ease-in-out;
 }
-.blog-section .blogs .blog .blog-text {
-  margin-top: -6px;
-  padding: 1.1rem;
+.gallery .gallery-images .gall-image .gallery-text {
+  margin-top: -3px;
+  padding: 0 0.5rem;
   border-top: 8px solid rgb(9, 100, 9);
 }
-.blog-section .blogs .blog .blog-text h4 {
-  font-size: 1.5rem;
-  margin-bottom: 0.7rem;
-  transition: all 0.4s ease-in-out;
-  cursor: pointer;
-}
-.blog-section .blogs .blog .blog-text h4:hover {
-  color: rgb(9, 100, 9);
-}
-.blog-section .blogs .blog .blog-text p {
+.gallery .gallery-images .gall-image .gallery-text p {
   color: rgb(22, 22, 22);
   line-height: 2rem;
   padding-bottom: 1rem;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+}
+.gallery .gallery-images .gall-image .gallery-text p:hover {
+  color: rgb(9, 100, 9);
 }
 
 .contact {
